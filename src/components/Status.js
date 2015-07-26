@@ -1,5 +1,6 @@
 import React from 'react';
-import moment from 'moment';
+
+import status from '../services/status';
 
 class Status extends React.Component {
   constructor(props) {
@@ -18,12 +19,8 @@ class Status extends React.Component {
 
   getRobStatusObject() {
     return {
-      robStatus: this.isHereNow() ? 'Yes!' : 'No.'
+      robStatus: status.isHereNow() ? 'Yes!' : 'No.'
     };
-  }
-
-  isHereNow() {
-    return moment().isAfter(this.props.returnDate);
   }
 
   render() {

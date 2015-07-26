@@ -5,7 +5,7 @@ import Status from '../components/Status';
 class Home extends React.Component {
   render() {
     return (
-      <Status returnDate={this.props.returnDate} />
+      <Status />
     );
   }
 }
