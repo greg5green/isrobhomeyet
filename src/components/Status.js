@@ -10,7 +10,7 @@ class Status extends React.Component {
   }
 
   componentDidMount() {
-    this.updateInterval = setInterval(() => this.updateStatusText, 1000);
+    this.updateInterval = setInterval(() => this.updateStatusText(), 1000);
   }
 
   componentWillUnmount() {
