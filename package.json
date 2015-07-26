@@ -2,7 +2,7 @@
   "name": "isrobhomeyet",
   "version": "1.0.0",
   "description": "Is Rob home yet?",
-  "main": "App/index.html",
+  "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smashingboxes/isrobhomeyet#readme",
   "dependencies": {
+    "moment": "^2.10.3",
     "react": "^0.13.3"
   },
   "devDependencies": {
