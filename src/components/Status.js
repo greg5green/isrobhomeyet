@@ -19,7 +19,7 @@ class Status extends React.Component {
 
   getRobStatusObject() {
     return {
-      robStatus: status.isHereNow() ? 'Yes!' : 'No.'
+      robStatus: status.isHereNow() ? 'Yes' : 'No'
     };
   }
 
