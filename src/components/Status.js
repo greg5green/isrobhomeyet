@@ -32,4 +32,4 @@ class Status extends React.Component {
   }
 }
 
-module.exports = Status;
+export default Status;

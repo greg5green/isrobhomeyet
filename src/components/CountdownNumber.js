@@ -6,4 +6,4 @@ class CountdownNumber extends React.Component {
   }
 }
 
-module.exports = CountdownNumber;
+export default CountdownNumber;

@@ -1,10 +1,5 @@
 let returnDate = new Date(2015, 8, 8, 9);
 
-module.exports = {
-  isHereNow,
-  timeRemaining
-};
-
 function isHereNow() {
   return Date.now() > returnDate.getTime();
 }
@@ -37,3 +32,5 @@ function timeRemaining() {
 
   return remainingTime;
 }
+
+export default { isHereNow, timeRemaining };
