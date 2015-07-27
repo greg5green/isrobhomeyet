@@ -1,6 +1,6 @@
 import React from 'react';
 
-import status from '../services/status';
+import {isHereNow} from '../services/status';
 
 class Status extends React.Component {
   constructor(props) {
@@ -19,14 +19,12 @@ class Status extends React.Component {
 
   getRobStatusObject() {
     return {
-      robStatus: status.isHereNow() ? 'Yes' : 'No'
+      robStatus: isHereNow() ? 'Yes' : 'No'
     };
   }
 
   render() {
-    return (
-      <h1>{this.state.robStatus}</h1>
-    );
+    return <h1>{this.state.robStatus}</h1>;
   }
 
   updateStatusText() {
