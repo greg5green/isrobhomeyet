@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Home from './views/Home';
+import markup from './index.html';
 
-import indexMarkup from './index.html';
+import Home from './views/Home';
 
 React.render(<Home />, document.getElementById('rob-countdown'));
